@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <!-- 状态栏占位控件，用于解决沉浸式状态栏 -->
+    <View
+        android:id="@+id/status_bar_placeholder_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="主页内容界面"
+        android:gravity="center"/>
+</LinearLayout>

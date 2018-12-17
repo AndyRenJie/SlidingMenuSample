@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SlidingMenuSample</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+</resources>

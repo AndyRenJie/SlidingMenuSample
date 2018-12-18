@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        boolVersion();
+//        boolVersion();
         initSlidingMenu();
     }
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         //菜单布局
         slidingMenu.setMenu(R.layout.main_menu);
-
+        //内容布局
         slidingMenu.setContent(R.layout.activity_main);
         //菜单宽度
         slidingMenu.setBehindWidth((int) (0.8f * getResources().getDisplayMetrics().widthPixels));
@@ -45,14 +46,11 @@ public class MainActivity extends AppCompatActivity {
      * 判断版本
      */
     private void boolVersion() {
-        View statusBarPlaceHolderView = findViewById(R.id.status_bar_placeholder_view);
+        TextView tvTitleBar = findViewById(R.id.tv_title_bar);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             int statusBarHeight = getStatusBarHeight();
-            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) statusBarPlaceHolderView.getLayoutParams();
-            layoutParams.height = statusBarHeight;
-            statusBarPlaceHolderView.setLayoutParams(layoutParams);
-        } else {
-            statusBarPlaceHolderView.setVisibility(View.GONE);
+            int titleBarPadding = getResources().getDimensionPixelSize(R.dimen.title_bar_padding);
+            tvTitleBar.setPadding(titleBarPadding, statusBarHeight + titleBarPadding, 0, titleBarPadding);
         }
     }
 

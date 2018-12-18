@@ -77,6 +77,7 @@ github上找到 jfeinstein10/SlidingMenu 这个项目的位置，download下来�
     }
   
 从attachToActivity的源码中可以看到它有一个actionbarOverlay的参数，意思是是否需要覆盖ActionBar，在这里把它修改为true
+    
     /**
      * Attaches the SlidingMenu to an entire Activity
      *

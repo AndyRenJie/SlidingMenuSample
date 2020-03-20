@@ -14,7 +14,7 @@ github上找到 jfeinstein10/SlidingMenu 这个项目的位置，download下来�
 这一步网上都有介绍，这里就不说了，不管你是继承SlidingActivity，还是直接new SlidingMenu()都可以实现侧边栏效果，最重要的方法都是attachToActivity()，
 先上效果图
 
-![image](https://github.com/AndyRenJie/xxx/xxx/xxx/xxx/xxx.gif)
+![image](https://github.com/AndyRenJie/SlidingMenuSample/blob/master/image/01.gif)
 
 可以看到状态栏是白色的，影响了沉浸式状态栏效果
 
@@ -90,7 +90,7 @@ github上找到 jfeinstein10/SlidingMenu 这个项目的位置，download下来�
     
 这里设置为true，还需要将调用的地方参数slideStyle设置为SlidingMenu.SLIDING_CONTENT，然后效果图就是这样
 
-![image](https://github.com/AndyRenJie/xxx/xxx/xxx/xxx/xxx.gif)
+![image](https://github.com/AndyRenJie/SlidingMenuSample/blob/master/image/02.gif)
 
 可以看到，状态栏和顶部标题栏重叠了，最后就是设置顶部标题栏的paddingTop属性就可以了
 
@@ -98,6 +98,6 @@ github上找到 jfeinstein10/SlidingMenu 这个项目的位置，download下来�
 
 先获取状态栏的高度status_bar_height，这个网上也有例子就不说了，然后就是setPadding()，top值 = 状态栏的高度 + 标题栏的内边距，所以最后的效果图就是这样
 
-![image](https://github.com/AndyRenJie/xxx/xxx/xxx/xxx/xxx.gif)
+![image](https://github.com/AndyRenJie/SlidingMenuSample/blob/master/image/03.gif)
 
 Thanks！

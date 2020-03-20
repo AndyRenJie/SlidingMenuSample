@@ -27,8 +27,6 @@ import android.widget.Scroller;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnClosedListener;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnOpenedListener;
-//import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnCloseListener;
-//import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnOpenListener;
 
 public class CustomViewAbove extends ViewGroup {
 
